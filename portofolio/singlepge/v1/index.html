@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Portofolio</title>
+</head>
+<body>
+    <!-- disini header dan navigasi dimulai  -->
+    
+    <header>
+        <nav>
+            <div class="brand">
+                <h4>Portofolio</h4>
+            </div>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="up">
+        <section id="profile">
+            <div class="left">
+                <div class="title"><h2>Your Name</h2></div>
+                <div class="info">
+                    <div class="education">Bachelor Degree - Informatics</div>
+                    <div class="address">
+                        Makam Keramat Solear Street <br>
+                        Solear - Tangerang - Banten <br>
+                        Post Code 15730 
+                    </div>
+                    <div class="sosmed">
+                        <a href="">Youtube</a>
+                        <a href="">Facebook</a>
+                        <a href="">Instagram</a>
+                        <a href="">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <figure>
+                    <img src="./assets/img/profile.jpg" alt="" class="rounded shadow">
+                </figure>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+        <section id="skills"></section>
+        <div class="clearfix"></div>
+        <section id="projects"></section>
+        <div class="clearfix"></div>
+        <section id="contact">
+            <form action="">
+                <div class="group">
+                    <label for="fullname">
+                        <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+                    </label>
+                </div>
+                <div class="group">
+                    <label for="email">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </label>
+                </div>
+                <div class="group">
+                    <label for="kategori">
+                        <select name="kategori" id="kategori">
+                            <option value="" selected>-Pilih Kategori-</option>
+                            <option value="1">Pengaduan</option>
+                            <option value="2">Request CV</option>
+                            <option value="3">Request Contract</option>
+                            <option value="4">Tanya Jawab</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="group">
+                    <label for="handphone">
+                        <input type="telp" name="handphone" id="handphone" placeholder="Nomor Handphone" maxlength="13" pattern="[0-9]">
+                    </label>
+                </div>
+                <div class="group">
+                    <label for="details">
+                        <textarea name="details" id="" cols="30" rows="10" placeholder="Write down your problem detail"></textarea>
+                    </label>
+                </div>
+                <div class="group">
+                    <button>Submit</button>
+                </div>
+            </form>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.795861115279!2d106.3995713151903!3d-6.290540295447154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4205c66852dd69%3A0x3331dda7e914d28c!2sVirtual%20Digital%20Solution!5e0!3m2!1sen!2sid!4v1674804879576!5m2!1sen!2sid" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+    </main>
+    <footer>&copy; Allright reserved <a href="">[ temenngoding ]</a> <span id="year"></span></footer>
+    <div id="top">
+        <a href="#up" id="atas"><img src="./assets/img/up.png" alt="" class="rounded img-small"></a>
+    </div>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/card-skill.js"></script>
+    <script src="./assets/js/card.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <script>
+        let x = new Date().getFullYear();
+        let y = document.getElementById('year').innerHTML = x;
+        </script>
+</body>
+</html>
